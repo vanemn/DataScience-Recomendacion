@@ -1,3 +1,4 @@
+#Donde se hace la interfaz de usuario para la aplicación de Streamlit.
 import streamlit as st
 import pandas as pd
 from logica import inquilinos_compatibles
@@ -9,7 +10,7 @@ st.set_page_config(layout="wide")
 resultado = None
 
 # Mostrar una gran imagen en la parte superior.
-st.image('./Media/portada.png', use_column_width=True)
+st.image('./Media/portada.png', use_container_width=True)
 
 # Insertar un espacio vertical de 60px
 st.markdown(f'<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)

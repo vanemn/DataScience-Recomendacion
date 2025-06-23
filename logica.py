@@ -1,4 +1,4 @@
-
+# Lógica de negocio para encontrar inquilinos compatibles
 # 1. SETUP
 import numpy as np
 import pandas as pd
@@ -15,7 +15,8 @@ df.columns = [
 
 # 3. ONE HOT ENCODING
 # Realizar el one-hot encoding
-encoder = OneHotEncoder(sparse=False)
+# variables en formato 0/1
+encoder = OneHotEncoder(sparse_output=False)
 df_encoded = encoder.fit_transform(df)
 
 # Obtener los nombres de las variables codificadas después de realizar el one-hot encoding

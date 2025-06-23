@@ -1,3 +1,4 @@
+#funciones de apoyo para la aplicación de Streamlit
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.graph_objs as go
